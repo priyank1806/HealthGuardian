@@ -1,21 +1,14 @@
-document.getElementById('appointmentForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
+// Dummy bot responses
+function getBotResponse() {
+  let userText = document.getElementById("userInput").value;
 
-    // Get form data
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const date = document.getElementById('date').value;
-    const time = document.getElementById('time').value;
-    const reason = document.getElementById('reason').value;
+  let botResponse = "I'm here to listen...";  // Replace with actual logic
+  if (userText.includes("sad")) {
+    botResponse = "I'm sorry you're feeling sad. Do you want to talk about it?";
+  } else if (userText.includes("joke")) {
+    botResponse = "Why don't scientists trust atoms? Because they make up everything! 😄";
+  }
 
-    // Confirmation message
-    const confirmationMessage = `Thank you, ${name}! Your appointment is scheduled for ${date} at ${time}. Reason: ${reason}. We will contact you at ${email}.`;
-
-    // Display confirmation
-    document.getElementById('confirmationMessage').innerText = confirmationMessage;
-    document.getElementById('confirmation').style.display = 'block';
-
-    // Reset form
-    document.getElementById('appointmentForm').reset();
-});
+  document.getElementById("chatWindow").innerHTML += "<div>" + botResponse + "</div>";
+  document.getElementById("userInput").value = "";  // Clear input
+}

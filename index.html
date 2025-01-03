@@ -1,37 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospitals in Bangalore</title>
-    <link rel="stylesheet" href="C:\Users\rumjhum\Desktop\bangalore\style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Chatbot</title>
+  <link rel="stylesheet" href="C:\Users\rumjhum\Desktop\chat\style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Hospitals in Bangalore</h1>
-        <div id="hospital-list">
-            <div class="hospital">
-                <h2>Health Guardian</h2>
-                <p>Address: #123, MG Road, Bangalore, Karnataka 560001</p>
-                <p>Phone: +91 80 1234 5678</p>
-            </div>
-            <div class="hospital">
-                <h2>Health Guardian</h2>
-                <p>Address: #456, Koramangala, Bangalore, Karnataka 560034</p>
-                <p>Phone: +91 80 8765 4321</p>
-            </div>
-            <div class="hospital">
-                <h2>Health Guardian</h2>
-                <p>Address: #789, Whitefield, Bangalore, Karnataka 560066</p>
-                <p>Phone: +91 80 2345 6789</p>
-            </div>
-            <div class="hospital">
-                <h2>Health Guardian</h2>
-                <p>Address: #101, Jayanagar, Bangalore, Karnataka 560011</p>
-                <p>Phone: +91 80 3456 7890</p>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
+  <div class="chatbot">
+    <div id="chatWindow"></div>
+    <input type="text" id="userInput" placeholder="Talk to me...">
+    <button onclick="getBotResponse()">Send</button>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
