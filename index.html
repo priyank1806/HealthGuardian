@@ -3,26 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medicine Recommender</title>
+    <title>Workout & Diet Recommender</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Medicine Recommender System</h1>
-            <p>Your personal assistant for quick health tips and medicine recommendations.</p>
-        </header>
+        <h1>Personalized Workout & Diet Recommender</h1>
+        <form id="recommenderForm">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
 
-        <section class="recommender-section">
-            <h2>What are you suffering from?</h2>
-            <input type="text" id="problem-input" placeholder="Enter your problem or symptoms">
-            <button onclick="getRecommendation()">Get Recommendation</button>
-        </section>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
 
-        <section class="result-section">
-            <h2>Recommended Medications & Measures</h2>
-            <div id="recommendation-result"></div>
-        </section>
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" required>
+
+            <label for="foodType">Food Preference:</label>
+            <select id="foodType" name="foodType">
+                <option value="veg">Vegetarian</option>
+                <option value="nonVeg">Non-Vegetarian</option>
+            </select>
+
+            <label for="disease">Generic Disease (if any):</label>
+            <input type="text" id="disease" name="disease">
+
+            <label for="allergies">Allergies:</label>
+            <input type="text" id="allergies" name="allergies">
+
+            <label for="region">Region:</label>
+            <select id="region" name="region">
+                <option value="indian">Indian</option>
+                <option value="chinese">Chinese</option>
+                <option value="jamaican">Jamaican</option>
+                <option value="cuban">Cuban</option>
+                <option value="brazilian">Brazilian</option>
+                <option value="mexican">Mexican</option>
+                <option value="argentinian">Argentinian</option>
+                <option value="middleEastern">Middle Eastern</option> <!-- fixed naming -->
+                <option value="moroccan">Moroccan</option>
+                <option value="west_african">West African</option>
+                <option value="south_african">South African</option>
+                <option value="french">French</option>
+                <option value="spanish">Spanish</option>
+                <option value="italian">Italian</option>
+                <option value="greek">Greek</option>
+                <option value="japanese">Japanese</option>
+                <option value="korean">Korean</option>
+                <option value="thai">Thai</option>
+                <option value="vietnamese">Vietnamese</option>
+            </select>
+
+            <button type="submit">Get Recommendation</button>
+        </form>
+
+        <div id="recommendation" class="recommendation-box"></div>
     </div>
 
     <script src="script.js"></script>
