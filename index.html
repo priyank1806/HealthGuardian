@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mental Health Chatbot</title>
-  <link rel="stylesheet" href="C:\Users\rumjhum\Desktop\chat\style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Recommender</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="chatbot">
-    <div id="chatWindow"></div>
-    <input type="text" id="userInput" placeholder="Talk to me...">
-    <button onclick="getBotResponse()">Send</button>
-  </div>
-  <script src="script.js"></script>
+    <div class="container">
+        <header>
+            <h1>Medicine Recommender System</h1>
+            <p>Your personal assistant for quick health tips and medicine recommendations.</p>
+        </header>
+
+        <section class="recommender-section">
+            <h2>What are you suffering from?</h2>
+            <input type="text" id="problem-input" placeholder="Enter your problem or symptoms">
+            <button onclick="getRecommendation()">Get Recommendation</button>
+        </section>
+
+        <section class="result-section">
+            <h2>Recommended Medications & Measures</h2>
+            <div id="recommendation-result"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
