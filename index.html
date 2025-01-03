@@ -3,44 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor's Appointment</title>
-    <link rel="stylesheet" href="C:\Users\rumjhum\Desktop\appointment\style.css">
+    <title>Hospitals in Bangalore</title>
+    <link rel="stylesheet" href="C:\Users\rumjhum\Desktop\bangalore\style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Book Your Appointment</h1>
-        <form id="appointmentForm">
-            <div class="form-group">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" required>
+        <h1>Hospitals in Bangalore</h1>
+        <div id="hospital-list">
+            <div class="hospital">
+                <h2>Health Guardian</h2>
+                <p>Address: #123, MG Road, Bangalore, Karnataka 560001</p>
+                <p>Phone: +91 80 1234 5678</p>
             </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
+            <div class="hospital">
+                <h2>Health Guardian</h2>
+                <p>Address: #456, Koramangala, Bangalore, Karnataka 560034</p>
+                <p>Phone: +91 80 8765 4321</p>
             </div>
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" required>
+            <div class="hospital">
+                <h2>Health Guardian</h2>
+                <p>Address: #789, Whitefield, Bangalore, Karnataka 560066</p>
+                <p>Phone: +91 80 2345 6789</p>
             </div>
-            <div class="form-group">
-                <label for="date">Appointment Date:</label>
-                <input type="date" id="date" required>
+            <div class="hospital">
+                <h2>Health Guardian</h2>
+                <p>Address: #101, Jayanagar, Bangalore, Karnataka 560011</p>
+                <p>Phone: +91 80 3456 7890</p>
             </div>
-            <div class="form-group">
-                <label for="time">Appointment Time:</label>
-                <input type="time" id="time" required>
-            </div>
-            <div class="form-group">
-                <label for="reason">Reason for Appointment:</label>
-                <textarea id="reason" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn">Book Appointment</button>
-        </form>
-        <div id="confirmation" class="confirmation" style="display:none;">
-            <h2>Appointment Confirmed!</h2>
-            <p id="confirmationMessage"></p>
         </div>
     </div>
-    <script src="C:\Users\rumjhum\Desktop\appointment\script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -6,77 +6,37 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background: #ffffff; /* White background for the form */
+    background: #ffffff; /* White background for the container */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s; /* Smooth hover effect */
-}
-
-.container:hover {
-    transform: scale(1.02); /* Scale effect on hover */
 }
 
 h1 {
     text-align: center;
     color: #007BFF; /* Blue color for the title */
-    font-family: 'Helvetica Neue', sans-serif; /* Stylish font */
+    margin-bottom: 20px;
 }
 
-.form-group {
-    margin-bottom: 15px;
-    background-color: #f7f7f7; /* Light gray background for form groups */
-    border-radius: 5px; /* Rounded corners */
-    padding: 15px; /* Padding inside the form group */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.hospital {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #007BFF; /* Blue border for each hospital */
+    border-radius: 5px; /* Rounded corners for hospital boxes */
+    background-color: #f9f9f9; /* Light gray background for hospital boxes */
+    transition: transform 0.3s; /* Smooth hover effect */
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold; /* Bold labels */
-    color: #333; /* Dark color for labels */
+.hospital:hover {
+    transform: scale(1.02); /* Scale effect on hover */
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #007BFF; /* Blue border */
-    border-radius: 5px; /* Rounded corners */
-    transition: border-color 0.3s; /* Smooth transition for border color */
+h2 {
+    color: #0056b3; /* Darker blue for hospital names */
 }
 
-input:focus, textarea:focus {
-    border-color: #0056b3; /* Darker blue on focus */
-    outline: none; /* Remove default outline */
-}
-
-.btn {
-    background-color: #007BFF; /* Blue button */
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    font-weight: bold; /* Bold button text */
-    transition: background-color 0.3s; /* Smooth background color change */
-}
-
-.btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-}
-
-.confirmation {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    border: 2px solid #28a745; /* Green border for confirmation */
-    border-radius: 5px;
-    background-color: #d4edda; /* Light green background */
-    color: #155724; /* Dark green text */
-    font-weight: bold; /* Bold confirmation text */
+p {
+    margin: 5px 0; /* Margin for paragraph text */
 }
